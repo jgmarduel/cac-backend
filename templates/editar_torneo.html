@@ -1,0 +1,46 @@
+{% extends "index.html" %} {% block titulo %} Editar torneo {% endblock %} {%
+block contenido %}
+<section class="section w-100 m-auto p-4">
+  <div class="row">
+    <h3>Editar torneo</h3>
+    <form action="{{url_for('actualizar_torneo')}}" method="post">
+      {# Enviar el id en un campo oculto #}
+      <input type="hidden" name="id" value="{{torneo[0]}}" />
+      <br>
+      <label for="nombre">Nombre:</label>
+      <input
+        value="{{torneo[1]}}"
+        required
+        type="text"
+        class="form-control input border-3 mt-1 mb-1 w-75"
+        placeholder="Nombre"
+        name="nombre"
+        id="nombre"
+      />
+      <br>
+      <label for="descripcion">Descripción</label>
+      <input
+        value="{{torneo[2]}}"
+        required
+        type="text"
+        class="form-control input border-3 mt-1 mb-1 w-75"
+        placeholder="Descripción"
+        name="descripcion"
+        id="descripcion"
+      /><br>
+      <label for="precio">Precio</label>
+      <input
+        value="{{torneo[3]}}"
+        required
+        type="number"
+        class="form-control input border-3 mt-1 mb-1 w-75"
+        placeholder="Precio"
+        name="precio"
+        id="precio"
+      />
+      <button type="submit" class="btn btn-success mt-2">Guardar</button>
+      <a href="{{url_for('torneos')}}" class="btn btn-danger mt-2">Volver</a>
+    </form>
+  </div>
+</section>
+{% endblock %}

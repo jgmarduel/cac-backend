@@ -1,0 +1,44 @@
+{% extends "index.html" %} {% block titulo %} Torneos {% endblock %} {% block
+contenido %}
+<div class="contenedor w-90 m-2 p-2 row justify-content-around">
+    <div>
+        <h2>Mejores jugadores</h2>
+    </div>
+    <div class="card col-sm-6 col-md-4 col-lg-2 m-sm-1 m-md-2 m-lg-3 p-0">
+      <div class="card img border-0 bg-dark m-0">
+        <img src="{{ url_for('static', filename='ali-farag.png') }}" class="card-img-top" alt="Foto de Alí Farag">
+      </div>
+        <div class="card-body m-0 p-0">
+          <div class="card-header bg-success-subtle m-0">Alí Farag</div>
+          <p class="card-text p-2">Desde que se graduó de la Universidad de Harvard con un título en Ingeniería Mecánica en 2014, el egipcio Ali Farag se convirtió en tres veces campeón mundial y pasó más de 140 semanas en la cima de la clasificación mundial.</p>
+        </div>
+    </div>
+    <div class="card col-sm-6 col-md-4 col-lg-2 m-sm-1 m-md-2 m-lg-3 p-0">
+      <div class="card img border-0 bg-dark m-0">
+        <img src="{{ url_for('static', filename='diego-elias.png') }}" class="card-img-top" alt="Foto de Diego Elías">
+      </div>
+        <div class="card-body m-0 p-0">
+          <div class="card-header bg-success-subtle m-0">Diego Elías</div>
+          <p class="card-text p-2"> El reconocido peruano Diego Elias es uno de los jugadores más dotados del PSA World Tour y ya ha hecho historia al convertirse en el primer número 1 del mundo sudamericano en este deporte.</p>
+        </div>
+    </div>
+    <div class="card col-sm-6 col-md-4 col-lg-2 m-sm-1 m-md-2 m-lg-3 p-0">
+      <div class="card img border-0 bg-dark m-0">
+        <img src="{{ url_for('static', filename='mohamed-elshorbagy.png') }}" class="card-img-top" alt="Foto de Mohamed ElShorbagy">
+      </div>
+        <div class="card-body m-0 p-0">
+          <div class="card-header bg-success-subtle m-0">Mohamed ElShorbagy</div>
+          <p class="card-text p-2"> Mohamed ElShorbagy, uno de los jugadores más talentosos del PSA World Tour, ha tenido cinco temporadas en el número 1 del mundo, se convirtió en campeón mundial y ahora se acerca a los 50 títulos del Tour.</p>
+        </div>
+    </div>
+    <div class="card col-sm-6 col-md-4 col-lg-2 m-sm-1 m-md-2 m-lg-3 p-0">
+      <div class="card img border-0 bg-dark m-0">
+        <img src="{{ url_for('static', filename='mostafa-asal.png') }}" class="card-img-top" alt="Foto de Mostafa Asal">
+      </div>
+        <div class="card-body m-0 p-0">
+          <div class="card-header bg-success-subtle m-0">Mostafa Asal</div>
+          <p class="card-text p-2"> Con solo 21 años, Mostafa Asal ya se ha ganado la reputación de ser uno de los jugadores más difíciles de vencer en el Tour. Ya tiene un puñado de títulos importantes a su nombre y se convirtió en el número 1 del mundo por primera vez en 2023.</p>
+        </div>
+    </div>
+  </div>
+{% endblock %}
